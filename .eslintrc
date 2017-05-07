@@ -1,0 +1,50 @@
+{
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "sourceType": "module",
+    "allowImportExportEverywhere": false
+  },
+  "env": {
+    "browser": true,
+    "node": true,
+    "commonjs": true,
+    "jasmine": true,
+    "jquery": true
+  },
+  "globals": {
+    "angular": true,
+    "debug": true,
+    "Materialize": true,
+    "io": true,
+    "Promise": true,
+    "videojs": true
+  },
+  "extends": "eslint:recommended",
+  "rules": {
+    "indent": [
+      "warn",
+      4,
+      {
+        "SwitchCase": 1
+      }
+    ],
+    "quotes": [
+      "warn",
+      "single"
+    ],
+    "semi": [
+      "error",
+      "always"
+    ],
+    "no-unused-vars": [
+      "off",
+      {
+        "vars": "all",
+        "args": "none"
+      }
+    ],
+    "no-console": [
+      "off"
+    ]
+  }
+}

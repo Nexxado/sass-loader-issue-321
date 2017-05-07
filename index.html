@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="sass-loader-bug">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <title>Sass Loader Bug</title>
+        <link href="./dist/app.css" rel="stylesheet">
+    </head>
+    <body ng-controller="MainController as mainCtrl">
+    <div class="one">{{ mainCtrl.one }}</divc>
+    <div class="two">{{ mainCtrl.two }}</div>
+    <div class="some">some</div>
+    <div class="something">something</div>
+
+    <script src="./dist/app.bundle.js"></script>
+    </body>
+</html>
